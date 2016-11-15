@@ -14,6 +14,8 @@
 		F943EF781DDAEA13009D60EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F943EF761DDAEA13009D60EA /* LaunchScreen.storyboard */; };
 		F943EF831DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943EF821DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift */; };
 		F943EF8E1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943EF8D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift */; };
+		F943EFA11DDAEA77009D60EA /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = F943EF9D1DDAEA77009D60EA /* mongoose.c */; };
+		F943EFA21DDAEA77009D60EA /* MongooseDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = F943EFA01DDAEA77009D60EA /* MongooseDaemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,11 @@
 		F943EF891DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongooseDeamonSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F943EF8D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongooseDeamonSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		F943EF8F1DDAEA13009D60EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F943EF9C1DDAEA76009D60EA /* MongooseDeamonSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MongooseDeamonSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F943EF9D1DDAEA77009D60EA /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		F943EF9E1DDAEA77009D60EA /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		F943EF9F1DDAEA77009D60EA /* MongooseDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseDaemon.h; sourceTree = "<group>"; };
+		F943EFA01DDAEA77009D60EA /* MongooseDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseDaemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 		F943EF611DDAEA13009D60EA = {
 			isa = PBXGroup;
 			children = (
+				F943EF9B1DDAEA20009D60EA /* Freamwork */,
 				F943EF6C1DDAEA13009D60EA /* MongooseDeamonSwiftDemo */,
 				F943EF811DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests */,
 				F943EF8C1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests */,
@@ -123,6 +131,18 @@
 				F943EF8F1DDAEA13009D60EA /* Info.plist */,
 			);
 			path = MongooseDeamonSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		F943EF9B1DDAEA20009D60EA /* Freamwork */ = {
+			isa = PBXGroup;
+			children = (
+				F943EF9D1DDAEA77009D60EA /* mongoose.c */,
+				F943EF9E1DDAEA77009D60EA /* mongoose.h */,
+				F943EF9F1DDAEA77009D60EA /* MongooseDaemon.h */,
+				F943EFA01DDAEA77009D60EA /* MongooseDaemon.m */,
+				F943EF9C1DDAEA76009D60EA /* MongooseDeamonSwiftDemo-Bridging-Header.h */,
+			);
+			name = Freamwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F943EF701DDAEA13009D60EA /* ViewController.swift in Sources */,
+				F943EFA11DDAEA77009D60EA /* mongoose.c in Sources */,
+				F943EFA21DDAEA77009D60EA /* MongooseDaemon.m in Sources */,
 				F943EF6E1DDAEA13009D60EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MongooseDeamonSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MongooseDeamonSwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MongooseDeamonSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MongooseDeamonSwiftDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
