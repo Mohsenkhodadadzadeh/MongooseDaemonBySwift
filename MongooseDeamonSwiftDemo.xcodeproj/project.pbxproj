@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F943EF6E1DDAEA13009D60EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943EF6D1DDAEA13009D60EA /* AppDelegate.swift */; };
+		F943EF701DDAEA13009D60EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943EF6F1DDAEA13009D60EA /* ViewController.swift */; };
+		F943EF731DDAEA13009D60EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F943EF711DDAEA13009D60EA /* Main.storyboard */; };
+		F943EF751DDAEA13009D60EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F943EF741DDAEA13009D60EA /* Assets.xcassets */; };
+		F943EF781DDAEA13009D60EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F943EF761DDAEA13009D60EA /* LaunchScreen.storyboard */; };
+		F943EF831DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943EF821DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift */; };
+		F943EF8E1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943EF8D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F943EF7F1DDAEA13009D60EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F943EF621DDAEA13009D60EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F943EF691DDAEA13009D60EA;
+			remoteInfo = MongooseDeamonSwiftDemo;
+		};
+		F943EF8A1DDAEA13009D60EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F943EF621DDAEA13009D60EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F943EF691DDAEA13009D60EA;
+			remoteInfo = MongooseDeamonSwiftDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F943EF6A1DDAEA13009D60EA /* MongooseDeamonSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongooseDeamonSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F943EF6D1DDAEA13009D60EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F943EF6F1DDAEA13009D60EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F943EF721DDAEA13009D60EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F943EF741DDAEA13009D60EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F943EF771DDAEA13009D60EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F943EF791DDAEA13009D60EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F943EF7E1DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongooseDeamonSwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F943EF821DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongooseDeamonSwiftDemoTests.swift; sourceTree = "<group>"; };
+		F943EF841DDAEA13009D60EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F943EF891DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MongooseDeamonSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F943EF8D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongooseDeamonSwiftDemoUITests.swift; sourceTree = "<group>"; };
+		F943EF8F1DDAEA13009D60EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F943EF671DDAEA13009D60EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F943EF7B1DDAEA13009D60EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F943EF861DDAEA13009D60EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F943EF611DDAEA13009D60EA = {
+			isa = PBXGroup;
+			children = (
+				F943EF6C1DDAEA13009D60EA /* MongooseDeamonSwiftDemo */,
+				F943EF811DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests */,
+				F943EF8C1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests */,
+				F943EF6B1DDAEA13009D60EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F943EF6B1DDAEA13009D60EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F943EF6A1DDAEA13009D60EA /* MongooseDeamonSwiftDemo.app */,
+				F943EF7E1DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.xctest */,
+				F943EF891DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F943EF6C1DDAEA13009D60EA /* MongooseDeamonSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F943EF6D1DDAEA13009D60EA /* AppDelegate.swift */,
+				F943EF6F1DDAEA13009D60EA /* ViewController.swift */,
+				F943EF711DDAEA13009D60EA /* Main.storyboard */,
+				F943EF741DDAEA13009D60EA /* Assets.xcassets */,
+				F943EF761DDAEA13009D60EA /* LaunchScreen.storyboard */,
+				F943EF791DDAEA13009D60EA /* Info.plist */,
+			);
+			path = MongooseDeamonSwiftDemo;
+			sourceTree = "<group>";
+		};
+		F943EF811DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F943EF821DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift */,
+				F943EF841DDAEA13009D60EA /* Info.plist */,
+			);
+			path = MongooseDeamonSwiftDemoTests;
+			sourceTree = "<group>";
+		};
+		F943EF8C1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F943EF8D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift */,
+				F943EF8F1DDAEA13009D60EA /* Info.plist */,
+			);
+			path = MongooseDeamonSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F943EF691DDAEA13009D60EA /* MongooseDeamonSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F943EF921DDAEA13009D60EA /* Build configuration list for PBXNativeTarget "MongooseDeamonSwiftDemo" */;
+			buildPhases = (
+				F943EF661DDAEA13009D60EA /* Sources */,
+				F943EF671DDAEA13009D60EA /* Frameworks */,
+				F943EF681DDAEA13009D60EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MongooseDeamonSwiftDemo;
+			productName = MongooseDeamonSwiftDemo;
+			productReference = F943EF6A1DDAEA13009D60EA /* MongooseDeamonSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F943EF7D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F943EF951DDAEA13009D60EA /* Build configuration list for PBXNativeTarget "MongooseDeamonSwiftDemoTests" */;
+			buildPhases = (
+				F943EF7A1DDAEA13009D60EA /* Sources */,
+				F943EF7B1DDAEA13009D60EA /* Frameworks */,
+				F943EF7C1DDAEA13009D60EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F943EF801DDAEA13009D60EA /* PBXTargetDependency */,
+			);
+			name = MongooseDeamonSwiftDemoTests;
+			productName = MongooseDeamonSwiftDemoTests;
+			productReference = F943EF7E1DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F943EF881DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F943EF981DDAEA13009D60EA /* Build configuration list for PBXNativeTarget "MongooseDeamonSwiftDemoUITests" */;
+			buildPhases = (
+				F943EF851DDAEA13009D60EA /* Sources */,
+				F943EF861DDAEA13009D60EA /* Frameworks */,
+				F943EF871DDAEA13009D60EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F943EF8B1DDAEA13009D60EA /* PBXTargetDependency */,
+			);
+			name = MongooseDeamonSwiftDemoUITests;
+			productName = MongooseDeamonSwiftDemoUITests;
+			productReference = F943EF891DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F943EF621DDAEA13009D60EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MKhodadadzadeh;
+				TargetAttributes = {
+					F943EF691DDAEA13009D60EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F943EF7D1DDAEA13009D60EA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F943EF691DDAEA13009D60EA;
+					};
+					F943EF881DDAEA13009D60EA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F943EF691DDAEA13009D60EA;
+					};
+				};
+			};
+			buildConfigurationList = F943EF651DDAEA13009D60EA /* Build configuration list for PBXProject "MongooseDeamonSwiftDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F943EF611DDAEA13009D60EA;
+			productRefGroup = F943EF6B1DDAEA13009D60EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F943EF691DDAEA13009D60EA /* MongooseDeamonSwiftDemo */,
+				F943EF7D1DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests */,
+				F943EF881DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F943EF681DDAEA13009D60EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F943EF781DDAEA13009D60EA /* LaunchScreen.storyboard in Resources */,
+				F943EF751DDAEA13009D60EA /* Assets.xcassets in Resources */,
+				F943EF731DDAEA13009D60EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F943EF7C1DDAEA13009D60EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F943EF871DDAEA13009D60EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F943EF661DDAEA13009D60EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F943EF701DDAEA13009D60EA /* ViewController.swift in Sources */,
+				F943EF6E1DDAEA13009D60EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F943EF7A1DDAEA13009D60EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F943EF831DDAEA13009D60EA /* MongooseDeamonSwiftDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F943EF851DDAEA13009D60EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F943EF8E1DDAEA13009D60EA /* MongooseDeamonSwiftDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F943EF801DDAEA13009D60EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F943EF691DDAEA13009D60EA /* MongooseDeamonSwiftDemo */;
+			targetProxy = F943EF7F1DDAEA13009D60EA /* PBXContainerItemProxy */;
+		};
+		F943EF8B1DDAEA13009D60EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F943EF691DDAEA13009D60EA /* MongooseDeamonSwiftDemo */;
+			targetProxy = F943EF8A1DDAEA13009D60EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F943EF711DDAEA13009D60EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F943EF721DDAEA13009D60EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F943EF761DDAEA13009D60EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F943EF771DDAEA13009D60EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F943EF901DDAEA13009D60EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F943EF911DDAEA13009D60EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F943EF931DDAEA13009D60EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MongooseDeamonSwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F943EF941DDAEA13009D60EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MongooseDeamonSwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F943EF961DDAEA13009D60EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MongooseDeamonSwiftDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MongooseDeamonSwiftDemo.app/MongooseDeamonSwiftDemo";
+			};
+			name = Debug;
+		};
+		F943EF971DDAEA13009D60EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MongooseDeamonSwiftDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MongooseDeamonSwiftDemo.app/MongooseDeamonSwiftDemo";
+			};
+			name = Release;
+		};
+		F943EF991DDAEA13009D60EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MongooseDeamonSwiftDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MongooseDeamonSwiftDemo;
+			};
+			name = Debug;
+		};
+		F943EF9A1DDAEA13009D60EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MongooseDeamonSwiftDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SibApp.MohsenKH.MongooseDeamonSwiftDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MongooseDeamonSwiftDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F943EF651DDAEA13009D60EA /* Build configuration list for PBXProject "MongooseDeamonSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F943EF901DDAEA13009D60EA /* Debug */,
+				F943EF911DDAEA13009D60EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F943EF921DDAEA13009D60EA /* Build configuration list for PBXNativeTarget "MongooseDeamonSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F943EF931DDAEA13009D60EA /* Debug */,
+				F943EF941DDAEA13009D60EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F943EF951DDAEA13009D60EA /* Build configuration list for PBXNativeTarget "MongooseDeamonSwiftDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F943EF961DDAEA13009D60EA /* Debug */,
+				F943EF971DDAEA13009D60EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F943EF981DDAEA13009D60EA /* Build configuration list for PBXNativeTarget "MongooseDeamonSwiftDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F943EF991DDAEA13009D60EA /* Debug */,
+				F943EF9A1DDAEA13009D60EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F943EF621DDAEA13009D60EA /* Project object */;
+}
